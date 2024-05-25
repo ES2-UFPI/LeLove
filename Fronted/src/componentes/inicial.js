@@ -3,7 +3,8 @@ import "normalize.css";
 import "./inicial.css";
 import logo from "../img/Lelove.png";
 
-function Inicial() {// Renomeie a função para começar com letra maiúscula
+function Inicial() {
+  // Renomeie a função para começar com letra maiúscula
 
   // const handleButtonClick = () => {
   //   // Função para manipular o clique no botão
@@ -19,7 +20,6 @@ function Inicial() {// Renomeie a função para começar com letra maiúscula
               <img src={logo} alt="Logo da Lelove" width="75" />
             </figure>
           </div>
-
           <button class="buttons">Entrar</button>
         </nav>
       </header>
@@ -30,7 +30,7 @@ function Inicial() {// Renomeie a função para começar com letra maiúscula
             <div>
               <h1>Deslize para a direita</h1>
               <div class="buttons">
-                 <button id="criar">Criar uma conta</button>
+                <button id="criar">Criar uma conta</button>
               </div>
             </div>
           </div>
