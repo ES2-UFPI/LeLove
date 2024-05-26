@@ -73,15 +73,15 @@ class Usuario {
         return this.#idade >= 18;
     }
 
-    // Método para atualizar o perfil
-    atualizarPerfil(dados) {
-        if (dados.nome) this.nome = dados.nome;
-        if (dados.idade) this.idade = dados.idade;
-        if (dados.user) this.user = dados.user;
-        if (dados.email) this.email = dados.email;
-        if (dados.telefone) this.telefone = dados.telefone;
-        if (dados.sexo) this.sexo = dados.sexo;
-    }
-}
+// Métodos para atualização seletiva
+atualizarDados(dados) {
+    const { nome, user, email, telefone, sexo } = dados;
 
+    if (nome !== undefined) this.#nome = nome;
+    if (user !== undefined) this.#user = user;
+    if (email !== undefined) this.#email = email;
+    if (telefone !== undefined) this.#telefone = telefone;
+    if (sexo !== undefined) this.#sexo = sexo;
+}
+}
 module.exports = Usuario;

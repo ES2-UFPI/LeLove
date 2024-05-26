@@ -5,6 +5,9 @@ const app =express();
 // Define a porta na qual o servidor irá escutar
 const port = 3000;
 
+// Middleware para interpretar JSON
+app.use(express.json());
+
 // Inicia o servidor e faz com que ele comece a escutar na porta definida
 app.listen(port, () => {
     // Exibe uma mensagem no console quando o servidor está funcionando
@@ -14,6 +17,9 @@ app.listen(port, () => {
 //Importa a classe Usuario do arquivo usuario.js
 const Usuario = require('./usuario');
 
+// Objeto para armazenar usuários em memória
+// Apagar quando implementar o banco de dados MySQL
+let usuarios = {}; 
 
 
 // Rota para cadastrar um novo usuário
@@ -40,4 +46,23 @@ app.post('/usuarios', (req, res) => {
             });
         }
 
+});
+
+// Rota para atualizar dados do usuário
+app.put('/usuarios/:user', (req, res) => {
+    const user = req.params.user;
+    const dadosAtualizados = req.body;
+
+    if (usuarios[user]) {
+        usuarios[user].atualizarDados(dadosAtualizados);
+
+        res.status(200).send({
+            message: 'Dados atualizados com sucesso',
+            usuario: usuarios[user]
+        });
+    } else {
+        res.status(404).send({
+            message: 'Usuário não encontrado'
+        });
+    }
 });
