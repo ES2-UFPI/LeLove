@@ -1,7 +1,6 @@
 import React from "react";
 import "normalize.css";
 import "./meuPerfil.css";
-// import logo from "../img/Lelove.png";
 
 function MeuPerfil() {
   //   const handleButtonClick = () => {
