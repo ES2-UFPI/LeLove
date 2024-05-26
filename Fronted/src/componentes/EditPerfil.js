@@ -158,12 +158,12 @@ function EditPerfil() {
                         </option>
                       </select>
 
-                      <button
+                      {/* <button
                         type="button"
                         onClick={() => alert("Form submitted")}
                       >
                         Enviar
-                      </button>
+                      </button> */}
                     </form>
                   </div>
                 </div>
@@ -173,7 +173,7 @@ function EditPerfil() {
               <button
                 type="button"
                 className="editar"
-                onClick={() => alert("Form saved")}
+                onClick={() => alert("Enviado")}
               >
                 Salvar
               </button>
