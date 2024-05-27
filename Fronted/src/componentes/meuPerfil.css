@@ -3,9 +3,9 @@
 body {
   font-family: "Livvic", sans-serif;
   background-color: #000;
-  margin: 0; /*GPT*/
-  padding: 0; /*GPT*/
-  color: #fff; /*GPT*/
+  margin: 0;
+  padding: 0;
+  color: #fff;
 }
 
 h1 {
@@ -44,10 +44,6 @@ main li {
   margin: 50px;
 }
 
-/* li {
-  margin: 5px 0;  Adiciona um espaçamento entre os itens da lista 
-} */
-
 .button-with-image {
   border: none; /* Remove bordas */
   color: white; /* Cor do texto */
@@ -68,11 +64,6 @@ main li {
   flex: 1; /* Opcional: faz os botões ocuparem o mesmo espaço */
   margin: 0 10px; /* Adiciona margem de 10px entre os botões */
 }
-
-/* main .upgrade {
-  border-style: solid;
-  border-color: #00ff26; 
-} */
 
 .bInicial {
   background: linear-gradient(to left bottom, #e4186a, #1f9fca);
@@ -110,8 +101,6 @@ main li {
 
 main .meuPerfil {
   display: flex;
-  /* border-style: solid;
-  border-color: #fff; */
   justify-content: space-around;
   align-items: flex-end;
   min-height: 300px;
@@ -122,7 +111,6 @@ main .meuPerfil {
 }
 
 main .imagens {
-  /* border-style: solid; */
   background-color: gray;
   width: 100%;
   height: 75%;
@@ -134,7 +122,6 @@ main .infos {
 }
 
 main .info {
-  /* border-style: solid; */
   width: 100%;
   height: 25%;
   background-color: #212121;

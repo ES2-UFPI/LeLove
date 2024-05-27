@@ -10,7 +10,6 @@ function MeuPerfil() {
 
   return (
     <body>
-      <header></header>
       <main>
         <div class="lateralEsquerda">
           <div class="lateralHome">
@@ -52,5 +51,5 @@ function MeuPerfil() {
     </body>
   );
 }
+export default MeuPerfil;
 
-export default MeuPerfil; // Exporte o componente com a primeira letra maiúscula
