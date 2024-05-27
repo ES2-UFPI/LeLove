@@ -3,9 +3,10 @@
 body {
   font-family: "Livvic", sans-serif;
   background-color: #000;
-  margin: 0; /*GPT*/
-  padding: 0; /*GPT*/
-  color: #fff; /*GPT*/
+
+  margin: 0;
+  padding: 0;
+  color: #fff
 }
 
 h1 {
@@ -151,9 +152,6 @@ main .overlay {
 }
 
 main {
-  /* display: flex;
-  height: 100vh; */
-
   height: 570px;
   padding: 2px;
   text-align: center;
@@ -192,7 +190,7 @@ footer {
   width: calc(
     100% + 20px
   ); /* Compensar a largura da scrollbar (depende do navegador, ajuste se necessário) */
-  height: 100%;
+  height: 92%;
   overflow-y: scroll; /* Permitir rolagem vertical */
   /* padding-right: 0px; Compensar a largura da scrollbar */
   box-sizing: content-box; /* Garantir que o padding não seja incluído na largura */
