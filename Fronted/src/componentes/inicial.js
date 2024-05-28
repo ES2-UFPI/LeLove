@@ -1,5 +1,5 @@
 import React from "react";
-import "normalize.css";
+import "./normalize.css";
 import "./inicial.css";
 import logo from "../img/Lelove.png";
 
