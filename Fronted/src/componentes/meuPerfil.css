@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Press+Start+2P&display=swap");
+
+body {
+  font-family: "Livvic", sans-serif;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+h1 {
+  color: #fff;
+}
+
+.logo img {
+  height: 40rem; /* Ajuste a altura conforme necessário */
+}
+
+.lateralEsquerda {
+  width: 25%;
+  min-width: 200px;
+  background-color: #000;
+  height: 100vh;
+} 
+
+.lateralHome {
+  background: linear-gradient(to left bottom, #e4186a, #1f9fca);
+  height: 10vh;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+} 
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+main li {
+  margin: 50px;
+}
+
+.button-with-image {
+  border: none; /* Remove bordas */
+  color: white; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto */
+  text-decoration: none; /* Remove sublinhado */
+  display: inline-flex; /* Flexbox para alinhamento */
+  align-items: center; /* Alinha itens no centro verticalmente */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+}
+
+.buttonsHome {
+  display: flex;
+  justify-content: space-between; /* Distribui os botões com espaço entre eles */
+}
+
+.buttonsHome button {
+  flex: 1; /* Opcional: faz os botões ocuparem o mesmo espaço */
+  margin: 0 10px; /* Adiciona margem de 10px entre os botões */
+}
+
+.bInicial {
+  background: linear-gradient(to left bottom, #e4186a, #1f9fca);
+  border: none; /* Remove bordas */
+  padding: 10px 20px; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto */
+  text-decoration: none; /* Remove sublinhado */
+  display: inline-flex; /* Flexbox para alinhamento */
+  align-items: center; /* Alinha itens no centro verticalmente */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+}
+
+.upgrade button {
+  background-color: rgb(26, 26, 26);
+  width: 100%;
+  border-radius: 5px;
+}
+
+.info button {
+  background: linear-gradient(to left bottom, #e4186a, #1f9fca);
+  width: 50%;
+  border-radius: 5px;
+}
+
+.lateralDireita {
+  width: 75%;
+  background-color: #000;
+  height: 100vh;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: solid #494949;
+} 
+
+main .meuPerfil {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  min-height: 300px;
+  height: 80%;
+  width: 30%;
+  min-width: 200px;
+  flex-direction: column;
+}
+
+main .imagens {
+  background-color: gray;
+  width: 100%;
+  height: 75%;
+}
+
+main .infos {
+  font-size: 30px;
+  text-align: left;
+}
+
+main .info {
+  width: 100%;
+  height: 25%;
+  background-color: #212121;
+}
+
+main {
+  height: 570px;
+  padding: 2px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+main h1 {
+  font-size: 80px;
+  color: white;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+footer {
+  text-align: right;
+  color: white;
+}

@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Press+Start+2P&display=swap");
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/fundoInicial.png");
+  background-size: cover;
+  font-family: "Livvic", sans-serif;
+  background-color: black;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.inicial-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+h1 {
+  color: #fff;
+}
+
+nav {
+  background: linear-gradient(to bottom, #000000, #000000cd, #00000000);
+  padding: 2px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.logo img {
+  height: 40rem; /* Ajuste a altura conforme necessário */
+}
+
+main {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.centralized-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centralized-section h1 {
+  font-size: 80px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+button {
+  background: linear-gradient(to left bottom, #e4186a, #1f9fca);
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 20px;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: right;
+  color: white;
+  padding: 10px;
+}
