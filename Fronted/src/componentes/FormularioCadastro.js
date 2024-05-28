@@ -4,6 +4,7 @@ import './FormularioCadastro.css';
 
 const FormularioCadastro = () => {
   const [formData, setFormData] = useState({
+    fullName: '',
     username: '',
     email: '',
     password: '',
@@ -26,36 +27,46 @@ const FormularioCadastro = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="username">Nome de usuário:</label>
+        <input
+          type="text"
+          id="fullName"
+          name="fullName"
+          placeholder="Nome completo"
+          value={formData.fullName}
+          onChange={handleChange}
+        />
+      </div>
+      <div>
         <input
           type="text"
           id="username"
           name="username"
+          placeholder="Nome de usuário"
           value={formData.username}
           onChange={handleChange}
         />
       </div>
       <div>
-        <label htmlFor="email">Email:</label>
         <input
           type="email"
           id="email"
           name="email"
+          placeholder="Email"
           value={formData.email}
           onChange={handleChange}
         />
       </div>
       <div>
-        <label htmlFor="password">Senha:</label>
         <input
           type="password"
           id="password"
           name="password"
+          placeholder="Senha"
           value={formData.password}
           onChange={handleChange}
         />
       </div>
-      <button type="submit">Cadastrar</button>
+      <button type="submit">Cadastre-se</button>
     </form>
   );
 };
