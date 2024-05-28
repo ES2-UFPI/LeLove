@@ -1,26 +1,26 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./normalize.css";
 import "./inicial.css";
 import logo from "../img/Lelove.png";
 
 function Inicial() {
-  // Renomeie a função para começar com letra maiúscula
+  const navigate = useNavigate();
 
-  // const handleButtonClick = () => {
-  //   // Função para manipular o clique no botão
-  //   window.open({FormularioCadastro}, "_blank"); // Abre o link em uma nova aba
-  // };
+  const handleCreateAccountClick = () => {
+    navigate("/cadastro");
+  };
 
   return (
-    <body>
+    <div>
       <header>
         <nav>
-          <div class="Logo">
+          <div className="Logo">
             <figure>
               <img src={logo} alt="Logo da Lelove" width="75" />
             </figure>
           </div>
-          <button class="buttons">Entrar</button>
+          <button className="buttons">Entrar</button>
         </nav>
       </header>
 
@@ -29,8 +29,10 @@ function Inicial() {
           <div>
             <div>
               <h1>Deslize para a direita</h1>
-              <div class="buttons">
-                <button id="criar">Criar uma conta</button>
+              <div className="buttons">
+                <button id="criar" onClick={handleCreateAccountClick}>
+                  Criar uma conta
+                </button>
               </div>
             </div>
           </div>
@@ -40,8 +42,8 @@ function Inicial() {
       <footer>
         <p>todos os modelos são do CANVA</p>
       </footer>
-    </body>
+    </div>
   );
 }
 
-export default Inicial; // Exporte o componente com a primeira letra maiúscula
+export default Inicial;
