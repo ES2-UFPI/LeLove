@@ -1,33 +1,35 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./normalize.css";
 import "./meuPerfil.css";
 
 function MeuPerfil() {
-  //   const handleButtonClick = () => {
-  //     // Função para manipular o clique no botão
-  //     window.open(<Inicial />, "_blank"); // Abre o link em uma nova aba
-  //   };
+  const navigate = useNavigate();
+
+  const handleEditProfileClick = () => {
+    navigate("/editar-perfil");
+  };
 
   return (
-    <body>
+    <div>
       <main>
-        <div class="lateralEsquerda">
-          <div class="lateralHome">
-            <div class="buttonsHome">
-              <button class="bInical">
+        <div className="lateralEsquerda">
+          <div className="lateralHome">
+            <div className="buttonsHome">
+              <button className="bInical">
                 <img src="Leloves.png" alt="Icon" width="30" height="30" />
               </button>
-              <button class="bConfig">Config</button>
+              <button className="bConfig">Config</button>
             </div>
           </div>
 
-          <div class="upgrade">
+          <div className="upgrade">
             <ul>
               <li>
                 <button>Platinum</button>
               </li>
               <li>
-                <button>Glod</button>
+                <button>Gold</button>
               </li>
               <li>
                 <button>Plus</button>
@@ -37,18 +39,18 @@ function MeuPerfil() {
           </div>
         </div>
 
-        <div class="lateralDireita">
-          <div class="meuPerfil">
-            <div class="imagens"></div>
+        <div className="lateralDireita">
+          <div className="meuPerfil">
+            <div className="imagens"></div>
 
-            <div class="info">
-              <h1 class="infos">Infos do usuario</h1>
-              <button class="editar">Editar perfil</button>
+            <div className="info">
+              <h1 className="infos">Infos do usuario</h1>
+              <button className="editar" onClick={handleEditProfileClick}>Editar perfil</button>
             </div>
           </div>
         </div>
       </main>
-    </body>
+    </div>
   );
 }
 
