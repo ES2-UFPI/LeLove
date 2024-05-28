@@ -16,7 +16,7 @@ function Inicial() {
   };
 
   return (
-    <div>
+    <div className="inicial-container">
       <header>
         <nav>
           <div className="Logo">
@@ -29,16 +29,12 @@ function Inicial() {
       </header>
 
       <main>
-        <section>
-          <div>
-            <div>
-              <h1>Deslize para a direita</h1>
-              <div className="buttons">
-                <button id="criar" onClick={handleCreateAccountClick}>
-                  Criar uma conta
-                </button>
-              </div>
-            </div>
+        <section className="centralized-section">
+          <h1>Deslize para a direita</h1>
+          <div className="buttons">
+            <button id="criar" onClick={handleCreateAccountClick}>
+              Criar uma conta
+            </button>
           </div>
         </section>
       </main>
