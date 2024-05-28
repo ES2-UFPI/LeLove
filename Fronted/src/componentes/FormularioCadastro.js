@@ -1,5 +1,5 @@
-// src/componentes/FormularioCadastro.js
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Importa useNavigate
 import './FormularioCadastro.css';
 
 const FormularioCadastro = () => {
@@ -9,6 +9,8 @@ const FormularioCadastro = () => {
     email: '',
     password: '',
   });
+
+  const navigate = useNavigate(); // Inicializa o useNavigate
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,6 +24,9 @@ const FormularioCadastro = () => {
     e.preventDefault();
     console.log('Dados do formulário enviados:', formData);
     // Aqui você pode adicionar a lógica para enviar os dados para o servidor
+
+    // Redireciona para a página de perfil após o envio do formulário
+    navigate('/meu-perfil');
   };
 
   return (
