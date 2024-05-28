@@ -73,6 +73,7 @@ class Usuario {
         return this.#idade >= 18;
     }
 
+
 // Métodos para atualização seletiva
 atualizarDados(dados) {
     const { nome, user, email, telefone, sexo } = dados;
@@ -83,5 +84,5 @@ atualizarDados(dados) {
     if (telefone !== undefined) this.#telefone = telefone;
     if (sexo !== undefined) this.#sexo = sexo;
 }
-}
+
 module.exports = Usuario;

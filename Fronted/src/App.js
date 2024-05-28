@@ -1,14 +1,9 @@
-// src/App.js
-import React from 'react';
-import FormularioCadastro from './componentes/FormularioCadastro';
+import React from "react";
+import "normalize.css";
+import PaginaInicial from "./componentes/inicial"; // Importe o componente com a primeira letra maiúscula
 
-const App = () => {
-  return (
-    <div className="App">
-      <h1>Formulário de Cadastro</h1>
-      <FormularioCadastro />
-    </div>
-  );
-};
+function App() {
+  return <PaginaInicial />;
+}
 
 export default App;

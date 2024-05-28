@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Press+Start+2P&display=swap");
+
+body {
+  font-family: "Livvic", sans-serif;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  color: #fff
+}
+
+h1 {
+  color: #fff;
+}
+
+.logo img {
+  height: 40rem; /* Ajuste a altura conforme necessário */
+} 
+
+.lateralEsquerda {
+  width: 25%;
+  min-width: 200px;
+  background-color: #000;
+  height: 100vh;
+} 
+
+.lateralHome {
+  background: linear-gradient(to left bottom, #e4186a, #1f9fca);
+  height: 10vh;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+} 
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+main li {
+  margin: 50px;
+}
+
+.button-with-image {
+  border: none; /* Remove bordas */
+  color: white; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto */
+  text-decoration: none; /* Remove sublinhado */
+  display: inline-flex; /* Flexbox para alinhamento */
+  align-items: center; /* Alinha itens no centro verticalmente */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+}
+
+.buttonsHome {
+  display: flex;
+  justify-content: space-between; /* Distribui os botões com espaço entre eles */
+}
+
+.buttonsHome button {
+  flex: 1; /* Opcional: faz os botões ocuparem o mesmo espaço */
+  margin: 0 10px; /* Adiciona margem de 10px entre os botões */
+}
+
+.bInicial {
+  background: linear-gradient(to left bottom, #e4186a, #1f9fca);
+  border: none; /* Remove bordas */
+  padding: 10px 20px; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto */
+  text-decoration: none; /* Remove sublinhado */
+  display: inline-flex; /* Flexbox para alinhamento */
+  align-items: center; /* Alinha itens no centro verticalmente */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+}
+
+.upgrade button {
+  background-color: rgb(26, 26, 26);
+  width: 100%;
+  border-radius: 5px;
+}
+
+.overlay button {
+  background: linear-gradient(to left bottom, #e4186a, #1f9fca);
+  width: 50%;
+  border-radius: 5px;
+}
+
+.lateralDireita {
+  width: 75%;
+  background-color: #000;
+  height: 100vh;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: solid #494949;
+} 
+
+
+main .meuPerfil {
+  position: relative;
+  display: flex;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: rgb(71, 71, 71);
+  justify-content: space-around;
+  align-items: flex-end;
+  min-height: 300px;
+  height: 80%;
+  width: 30%;
+  min-width: 200px;
+}
+
+main .background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+main .infos {
+  font-size: 30px;
+  text-align: left;
+}
+
+/* .overlay {
+  position: absolute;
+  width: 100%;
+  height: 11%;
+  background: linear-gradient(to top, #000, #000, #00000000);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+} */
+
+main .overlay {
+  position: absolute;
+  width: 100%;
+  height: 11%;
+  background: linear-gradient(to top, #000000, #000000, #00000000);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+main {
+  height: 570px;
+  padding: 2px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+main h1 {
+  font-size: 80px;
+  color: white;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+footer {
+  text-align: right;
+  color: white;
+}
+
+.outer-container {
+  width: 100%; /* Largura fixa da div */
+  height: 100%; /* Altura fixa da div */
+  overflow: hidden; /*Ocultar barras de rolagem*/
+  position: relative;
+}
+
+.inner-container {
+  width: calc(
+    100% + 20px
+  ); /* Compensar a largura da scrollbar (depende do navegador, ajuste se necessário) */
+  height: 92%;
+  overflow-y: scroll; /* Permitir rolagem vertical */
+  /* padding-right: 0px; Compensar a largura da scrollbar */
+  box-sizing: content-box; /* Garantir que o padding não seja incluído na largura */
+}
+
+.scrollable-content {
+  /* padding: 10px; Espaçamento interno para o conteúdo */
+  width: 86%;
+}
+
+.form-container {
+  width: 100%;
+  /* margin: 0 auto; */
+  /* padding: 20px; */
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+}
+
+
+.form-container label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  background-color: rgb(0, 0, 0);
+  /* border-style: solid; */
+  color: white;
+}
+
+/* .form-container input,
+.form-container textarea,
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+} */
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  /* border: 1px solid #ff0000; */
+  border-radius: 5px;
+  background-color: gray;
+  color: rgb(255, 255, 255);
+}
