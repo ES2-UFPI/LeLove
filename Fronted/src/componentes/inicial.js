@@ -11,6 +11,10 @@ function Inicial() {
     navigate("/cadastro");
   };
 
+  const handleLoginClick = () => {
+    navigate("/login");
+  };
+
   return (
     <div>
       <header>
@@ -20,7 +24,7 @@ function Inicial() {
               <img src={logo} alt="Logo da Lelove" width="75" />
             </figure>
           </div>
-          <button className="buttons">Entrar</button>
+          <button className="buttons" onClick={handleLoginClick}>Entrar</button>
         </nav>
       </header>
 
