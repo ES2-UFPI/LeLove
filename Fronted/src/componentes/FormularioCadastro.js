@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // Importa useNavigate
 import './FormularioCadastro.css';
 
@@ -8,9 +8,25 @@ const FormularioCadastro = () => {
     username: '',
     email: '',
     password: '',
+    latitude: null,
+    longitude: null,
   });
 
   const navigate = useNavigate(); // Inicializa o useNavigate
+
+  useEffect(() => {
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        setFormData((prevFormData) => ({
+          ...prevFormData,
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+        }));
+      });
+    } else {
+      console.log("Geolocalização não é suportada neste navegador.");
+    }
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
