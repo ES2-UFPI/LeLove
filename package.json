@@ -1,0 +1,13 @@
+{
+  "name": "LeLove",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ES2-UFPI/LeLove.git",
+  "author": "thiago <thiagobenz99@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
+  }
+}
