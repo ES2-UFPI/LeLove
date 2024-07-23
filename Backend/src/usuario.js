@@ -7,6 +7,7 @@ class Usuario {
     #email;
     #telefone;
     #sexo;
+    #personalidade
 
     //metodo construtor
     constructor(nome, idade, user, email, telefone, sexo) {
@@ -16,6 +17,7 @@ class Usuario {
         this.#email = email;
         this.#telefone = telefone;
         this.#sexo = sexo;
+        this.personalidade = null;
     }
 
     //metodos getters
@@ -42,7 +44,25 @@ class Usuario {
     get sexo() {
         return this.#sexo;
     }
+    get personalidade(){
+        if(this.personalidade == 1){
+            return "Extrovertido e Sociável";
+        }
+        if(this.personalidade == 2){
+            return "Moderadamente Sociável e Cultural";
+        }
+        if(this.personalidade == 3){
+            return "Introvertido e Caseiro";
+        }
+        if(this.personalidade == 4){
+            return "Recluso e Independente";
+        }
+        if(this.personalidade == 5){
+            return "Indefinido";
+        }
 
+        return "Teste de personalidade incompleto! Por favor, realize o teste."
+    }
     //metodos setters
     set nome(nome) {
         this.#nome = nome;
@@ -66,6 +86,10 @@ class Usuario {
 
     set sexo(sexo) {
         this.#sexo = sexo;
+    }
+
+    set Personalidade(personalidade) {
+        this.personalidade = personalidade;
     }
 
     // Método para verificar se o usuário é maior de 18 anos
