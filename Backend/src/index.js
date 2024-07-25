@@ -22,7 +22,7 @@ app.post('/usuarios', (req, res) => {
     const novoUsuario = new Usuario(nome, idade, user, email, telefone, sexo);
 
     // Verifica se o usuário é maior de idade
-    const maiorDeIdade = novoUsuario.isMaiorDeIdade();
+    //const maiorDeIdade = novoUsuario.isMaiorDeIdade();
 
     // Adicione lógica para salvar o usuário em um banco de dados aqui
 

@@ -17,7 +17,7 @@ class Usuario {
         this.#email = email;
         this.#telefone = telefone;
         this.#sexo = sexo;
-        this.personalidade = null;
+        this.#personalidade = null;
     }
 
     //metodos getters
@@ -45,19 +45,19 @@ class Usuario {
         return this.#sexo;
     }
     get personalidade(){
-        if(this.personalidade == 1){
+        if(this.#personalidade == 1){
             return "Extrovertido e Sociável";
         }
-        if(this.personalidade == 2){
+        if(this.#personalidade == 2){
             return "Moderadamente Sociável e Cultural";
         }
-        if(this.personalidade == 3){
+        if(this.#personalidade == 3){
             return "Introvertido e Caseiro";
         }
-        if(this.personalidade == 4){
+        if(this.#personalidade == 4){
             return "Recluso e Independente";
         }
-        if(this.personalidade == 5){
+        if(this.#personalidade == 5){
             return "Indefinido";
         }
 
@@ -89,7 +89,7 @@ class Usuario {
     }
 
     set Personalidade(personalidade) {
-        this.personalidade = personalidade;
+        this.#personalidade = personalidade;
     }
 
     // Método para verificar se o usuário é maior de 18 anos
