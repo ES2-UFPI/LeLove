@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4c1b9ec8.css",
+    "main.js": "/static/js/main.d021b327.js",
+    "static/js/453.d50c1538.chunk.js": "/static/js/453.d50c1538.chunk.js",
+    "static/media/fundoInicial.png": "/static/media/fundoInicial.d689c9595304eccd2eb9.png",
+    "static/media/Lelove.png": "/static/media/Lelove.8a78465805a9a49f116b.png",
+    "index.html": "/index.html",
+    "main.4c1b9ec8.css.map": "/static/css/main.4c1b9ec8.css.map",
+    "main.d021b327.js.map": "/static/js/main.d021b327.js.map",
+    "453.d50c1538.chunk.js.map": "/static/js/453.d50c1538.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c1b9ec8.css",
+    "static/js/main.d021b327.js"
+  ]
+}

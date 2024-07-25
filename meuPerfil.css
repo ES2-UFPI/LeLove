@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Press+Start+2P&display=swap");
+
+body {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
+    url("../img/fundoInicial.png"); */
+
+  font-family: "livvic";
+  background-color: rgb(0, 0, 0);
+}
+
+h1 {
+  color: #fff;
+}
+
+.logo img {
+  height: HUg(40rem); /* Ajuste a altura conforme necessário */
+}
+main .lateralEsquerda {
+  border-style: solid;
+  /* border-color: #e4186a; */
+
+  width: 25%;
+  min-width: 200px; /* Define a largura mínima */
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+}
+
+main li {
+  margin: 50px;
+  border-style: solid;
+}
+
+main .lateralHome {
+  background: linear-gradient(to left bottom, #e4186a, #1f9fca);
+  /* border-color: #ffffff; */
+  height: 10vh;
+  min-height: 80px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ul,
+ol {
+  list-style-type: none; /* Remove os pontos da lista */
+  padding: 0; /* Remove o padding padrão */
+  margin: 0; /* Remove a margem padrão */
+}
+
+li {
+  margin: 5px 0; /* Adiciona um espaçamento entre os itens da lista */
+}
+
+.button-with-image {
+  border: none; /* Remove bordas */
+  color: white; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto */
+  text-decoration: none; /* Remove sublinhado */
+  display: inline-flex; /* Flexbox para alinhamento */
+  align-items: center; /* Alinha itens no centro verticalmente */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+}
+
+main .buttonsHome {
+  display: flex;
+  justify-content: space-between; /* Distribui os botões com espaço entre eles */
+}
+
+.buttonsHome button {
+  flex: 1; /* Opcional: faz os botões ocuparem o mesmo espaço */
+  margin: 0 10px; /* Adiciona margem de 10px entre os botões */
+}
+
+main .upgrade {
+  border-style: solid;
+  /* border-color: #00ff26; */
+}
+
+.bInicial {
+  background: linear-gradient(to left bottom, #e4186a, #1f9fca);
+  border: none; /* Remove bordas */
+  padding: 10px 20px; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto */
+  text-decoration: none; /* Remove sublinhado */
+  display: inline-flex; /* Flexbox para alinhamento */
+  align-items: center; /* Alinha itens no centro verticalmente */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+}
+
+.upgrade button {
+  background-color: rgb(26, 26, 26);
+  width: 100%;
+  border-radius: 5px;
+}
+.info button {
+  background: linear-gradient(to left bottom, #e4186a, #1f9fca);
+  width: 50%;
+  border-radius: 5px;
+}
+
+main .lateralDireita {
+  /* border-style: solid; */
+  border-color: #1100ff;
+  width: 100%;
+  min-width: 200px;
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-left: solid;
+  border-color: #494949;
+}
+
+main .meuPerfil {
+  display: flex;
+  /* border-style: solid;
+  border-color: #fff; */
+  justify-content: space-around;
+  align-items: flex-end;
+  min-height: 300px;
+  height: 80%;
+  width: 30%;
+  min-width: 200px;
+  flex-direction: column;
+}
+
+main .imagens {
+  /* border-style: solid; */
+  background-color: gray;
+  width: 100%;
+  height: 75%;
+}
+
+main .infos {
+  font-size: 30px;
+  text-align: left;
+}
+
+main .info {
+  /* border-style: solid; */
+  width: 100%;
+  height: 25%;
+  background-color: #212121;
+}
+
+main {
+  height: 570px;
+  padding: 2px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+main h1 {
+  font-size: 80px;
+  color: white;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+footer {
+  text-align: right;
+  color: white;
+}
