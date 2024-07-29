@@ -11,6 +11,18 @@ app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
 
+//TESTE DE PERSONALIDADE
+const bodyParser = require('body-parser');
+const testePersonalidadeRoutes = require('./routes/testePersonalidade');
+app.use(bodyParser.json());
+app.use('/api/testePersonalidade', testePersonalidadeRoutes);
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
+//--------------------------------------
+
 //Importa a classe Usuario do arquivo usuario.js
 const Usuario = require('./usuario');
 
