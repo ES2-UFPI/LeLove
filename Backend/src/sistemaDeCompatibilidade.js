@@ -22,12 +22,4 @@ class SistemaDeCompatibilidade {
   }
 }
 
-// Exemplo de uso
-const usuario1 = new Usuario('João', 1); // Extrovertido e Sociável
-const usuario2 = new Usuario('Maria', 2); // Moderadamente Sociável e Cultural
-
-console.log(SistemaDeCompatibilidade.verificarCompatibilidade(usuario1, usuario2)); // Compatível
-
-const usuario3 = new Usuario('Carlos', 4); // Recluso e Independente
-
-console.log(SistemaDeCompatibilidade.verificarCompatibilidade(usuario1, usuario3)); // Não compatível
+module.exports = SistemaDeCompatibilidade;
