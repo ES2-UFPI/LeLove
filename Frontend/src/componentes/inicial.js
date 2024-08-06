@@ -38,7 +38,8 @@ function Inicial() {
             </button>
           </div>
         </section>
-      </main>
+    </main>
+
 
       <footer>
         <p>todos os modelos são do CANVA</p>
