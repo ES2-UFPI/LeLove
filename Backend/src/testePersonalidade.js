@@ -1,43 +1,46 @@
-// app.js
-const express = require('express');
-const bodyParser = require('body-parser');
 const perguntas = require('./perguntas');
-const Usuario = require('./usuario');
 
-const app = express();
-app.use(bodyParser.json());
+function calcularResultado(respostas) {
+  const perfis = {};
 
-function calcularPersonalidade(respostas) {
-  const perfis = { 1: 0, 2: 0, 3: 0, 4: 0 };
+  respostas.forEach(resposta => {
+    const { perguntaId, respostaId } = resposta;
+    const pergunta = perguntas[perguntaId];
+    const respostaEscolhida = pergunta.respostas[respostaId];
 
-  respostas.forEach((resposta, indice) => {
-    const perfil = perguntas[indice].respostas[resposta].perfil;
-    perfis[perfil]++;
+    if (!perfis[respostaEscolhida.perfil]) {
+      perfis[respostaEscolhida.perfil] = 0;
+    }
+    perfis[respostaEscolhida.perfil] += 1;
   });
 
-  const maxPontuacao = Math.max(...Object.values(perfis));
-  const personalidadesMaximas = Object.keys(perfis).filter(
-    perfil => perfis[perfil] === maxPontuacao
-  );
+  const perfilFinal = Object.keys(perfis).reduce((a, b) => (perfis[a] > perfis[b] ? a : b));
 
-  if (personalidadesMaximas.length > 1) {
-    return 5; // Indefinido
+  let resultado = { tipo: "", descricao: "" };
+  switch (perfilFinal) {
+    case "1":
+      resultado.tipo = "Extrovertido";
+      resultado.descricao = "Você adora socializar e prefere estar entre amigos.";
+      break;
+    case "2":
+      resultado.tipo = "Equilibrado";
+      resultado.descricao = "Você gosta de atividades variadas e equilibra bem entre socializar e ficar sozinho.";
+      break;
+    case "3":
+      resultado.tipo = "Introvertido";
+      resultado.descricao = "Você prefere atividades mais tranquilas e gosta de momentos de paz.";
+      break;
+    case "4":
+      resultado.tipo = "Reflexivo";
+      resultado.descricao = "Você prefere refletir e analisar antes de tomar decisões.";
+      break;
+    default:
+      resultado.tipo = "Indefinido";
+      resultado.descricao = "Seu perfil não pôde ser determinado.";
+      break;
   }
 
-  return parseInt(personalidadesMaximas[0], 10);
+  return resultado;
 }
 
-app.post('/testePersonalidade', (req, res) => {
-  const respostas = req.body.respostas;
-  const personalidade = calcularPersonalidade(respostas);
-
-  const usuario = new Usuario('João'); // Nome pode ser passado no request
-  usuario.setPersonalidade(personalidade);
-
-  res.json({ personalidade: usuario.getPersonalidade() });
-});
-
-const port = 3000;
-app.listen(port, () => {
-  console.log(`Servidor rodando na porta ${port}`);
-});
+module.exports = { perguntas, calcularResultado };

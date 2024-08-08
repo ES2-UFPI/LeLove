@@ -1,5 +1,17 @@
 {
-  "dependencies": {
-    "sqlite3": "^5.1.7"
+  "name": "lelove",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha Backend/test --require esm"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "esm": "^3.2.25",
+    "mocha": "^9.1.3"
   }
 }
